@@ -1,0 +1,28 @@
+<html>
+<head>
+</head>
+<body>
+  <h3>Watch AI learn to dodge the missles!</h3>
+  <canvas id="canvas" width="600" height="600"></canvas>
+  <div style="display:none;">
+    <img id="sky" src="http://images.all-free-download.com/images/graphicthumb/sunny_blue_sky_background_vector_538313.jpg">
+    <img id="missile" src="https://www.shareicon.net/data/128x128/2016/10/01/838130_bomb_512x512.png">
+    <img id="plane" src="http://i.imgur.com/3chscST.png">
+    <img id="boom" src="https://storage.googleapis.com/csfirst-files/files/Explosion.png">
+  </div>
+  <textarea id="data" rows="10" columns="10"></textarea>
+  <br />
+  <button onclick="importData()">Import Brain</button>
+  <button onclick="exportData()">Export Brain</button>
+  <br />
+  <button onclick="moreEnemies()">More Enemies</button>
+  <button onclick="lessEnemies()">Less Enemies</button>
+  <br />
+  <button onclick="fasterSpawn()">Faster Spawn</button>
+  <button onclick="slowerSpawn()">Slower Spawn</button>
+  <br />
+  <button onclick="loadPreTrainedData()">Load Pre-Trained Data</button>
+  <script src="http://cs.stanford.edu/people/karpathy/reinforcejs/lib/rl.js"></script>
+  <script src="./index.js"></script>
+</body>
+</html>
